@@ -1,24 +1,53 @@
 package com.example.assignment1
 
 import android.os.Bundle
+import android.util.Log
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 import android.widget.TextView
 import android.widget.EditText
+import android.content.ContentValues.TAG
 class SocialSpark : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.spark_social) // points to the spark_social XML
 
-        val socialSParkEditText = findViewById<EditText>(R.id.socialSparkEditText)
+        val socialSparkEditText = findViewById<EditText>(R.id.socialSparkEditText)
         val confirmButton = findViewById<Button>(R.id.confirmButton)
         val resetButton = findViewById<Button>(R.id.resetButton)
         val socialSparkTextView = findViewById<TextView>(R.id.socialSparkTextView)
 
-        
+        // create button press event for when statement
+
+        confirmButton.setOnClickListener {
+
+            Log.d(TAG, "confirm button is pressed")
 
 
+            val timeOfDay = socialSparkEditText.text.toString()  // declaring val timeOfDay to EditText
+            when (timeOfDay) {
+                "Morning" -> socialSparkTextView.text = ("send a 'good morning' text to a family member.")
+                "Mid-morning" -> socialSparkTextView.text = ("Reach out to a colleague with a quick 'Thank you.'")
+                "Afternoon" -> socialSparkTextView.text = ("Share a funny meme or interesting link with a friend.")
+                "Afternoon Snack-Time" -> socialSparkTextView.text = ("Send a quick 'thinking of you' message.")
+                "Dinner" -> socialSparkTextView.text = ("Call a friend or relative for a quick 5-minute catch-up.")
+                "After Dinner" -> socialSparkTextView.text = ("Leave a thoughtful comment on a friend's post.")
+                else -> socialSparkTextView.text = ("Please enter a valid time of day. " + " ie. 'Dinner' or Afternoon.'")  // if the user does not input a valid time of day this message will be displayed
+            }
+            Log.i(TAG, "the appropriate message is printed")
+        }
+        resetButton.setOnClickListener {
+            // make resetButton erase all results
 
+            Log.d(TAG, "confirm that reset button has been pressed")
+
+
+            socialSparkEditText.text.clear()
+            socialSparkTextView.text = ""
+
+            Log.i(TAG, "confirm that all fields have been erased")
+
+        }
     }
 }
