@@ -1,7 +1,10 @@
 package com.example.assignment1
 
+import android.content.ContentValues.TAG
 import android.content.Intent
+import android.nfc.Tag
 import android.os.Bundle
+import android.util.Log
 import android.widget.Button
 import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
@@ -19,10 +22,14 @@ class MainActivity : AppCompatActivity() {
         val welcomeTextView = findViewById<TextView>(R.id.welcomeTextView)
 
         getStartedButton.setOnClickListener {
-// Create an intent to move from activity 1 to activity 2
+// Create an intent to move from MainActivity to SocialSpark
+
+            Log.d(TAG, "get started buton pressed")
+
             val intent = Intent(this, SocialSpark::class.java)
             startActivity(intent)
 
+            Log.i(TAG, "Successfully taken to SocialSpark.kt")
 
         }
     }
