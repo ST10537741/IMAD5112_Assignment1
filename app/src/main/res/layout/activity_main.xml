@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B9F6CA"
+    android:backgroundTint="#F4FF81"
+    android:orientation="vertical"
+    app:barrierMargin="@dimen/cardview_compat_inset_shadow"
+    tools:context=".MainActivity">
+    <Button
+        android:id="@+id/getStartedButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="580dp"
+        android:text="Get Started" />
+
+    <TextView
+        android:id="@+id/welcomeTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Welcome! Spark your social life!"
+        android:textSize="20sp" />
+
+</LinearLayout>
