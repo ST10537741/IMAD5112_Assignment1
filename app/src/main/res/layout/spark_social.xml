@@ -10,7 +10,7 @@
     android:orientation="vertical"
     app:barrierMargin="@dimen/cardview_compat_inset_shadow"
     tools:context=".SocialSpark">
-    
+
 
     <Button
         android:id="@+id/confirmButton"
@@ -28,7 +28,7 @@
         android:id="@+id/socialSparkTextView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="TextView" />
+        android:text="Spark Suggestion will appear here" />
 
     <EditText
         android:id="@+id/socialSparkEditText"
