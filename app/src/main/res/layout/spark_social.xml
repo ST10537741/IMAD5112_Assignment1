@@ -1,66 +1,54 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#B9F6CA"
-    android:backgroundTint="#F4FF81"
+    android:background="#E9430F"
+    android:backgroundTint="#B83713"
     android:orientation="vertical"
     app:barrierMargin="@dimen/cardview_compat_inset_shadow"
     tools:context=".SocialSpark">
 
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="match_parent"
-        android:layout_height="fill_parent"
-        android:layout_constraintBottom_toBottomOf="@id/imageView"
-        app:layout_constraintEnd_toEndOf="@+id/imageView"
-        app:srcCompat="@drawable/orange_phone"
-        tools:layout_editor_absoluteX="-16dp"
-        tools:layout_editor_absoluteY="-65dp" />
+
+     />
 
     <Button
         android:id="@+id/confirmButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="544dp"
-        android:text="Confirm"
-        app:layout_constraintBaseline_toTopOf="@+/confirmButton"
-        app:layout_constraintBottom_toBottomOf="parent"
-        tools:layout_editor_absoluteX="16dp" />
+        android:layout_marginBottom="dp"
+        android:layout_marginTop="45dp"
+        android:text="Confirm" />
 
     <TextView
         android:id="@+id/socialSparkTextView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="616dp"
-        android:text="TextView"
-        app:layout_constraintBaseline_toTopOf="@+/socialSparkTextView"
-        app:layout_constraintBottom_toBottomOf="parent"
-        tools:layout_editor_absoluteX="0dp" />
+        android:text="TextView" />
 
     <EditText
         android:id="@+id/socialSparkEditText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="644dp"
-        android:hint="Enter time of day"
-        app:layout_constraintBaseline_toTopOf="@+/socialSparkTextView"
-        app:layout_constraintBottom_toBottomOf="parent"
-        tools:layout_editor_absoluteX="16dp" />
+        android:layout_marginBottom="dp"
+        android:hint="Enter time of day" />
 
     <Button
         android:id="@+id/resetButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="488dp"
-        android:text="Reset"
-        app:layout_constraintBaseline_toTopOf="@+/resetButton"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        android:layout_marginBottom="45dp"
+        android:text="Reset" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="428dp"
+        android:layout_height="655dp"
+        android:layout_marginTop="dp"
+        app:srcCompat="@drawable/orange_phone" />
 
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
