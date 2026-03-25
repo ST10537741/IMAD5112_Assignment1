@@ -5,23 +5,24 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#E9430F"
-    android:backgroundTint="#B83713"
+    android:background="#FF9800"
+    android:backgroundTint="#CC5227"
     android:orientation="vertical"
     app:barrierMargin="@dimen/cardview_compat_inset_shadow"
     tools:context=".SocialSpark">
-
-
-
-     />
+    
 
     <Button
         android:id="@+id/confirmButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="1dp"
         android:layout_marginTop="45dp"
-        android:text="Confirm" />
+        android:layout_marginBottom="1dp"
+        android:background="#FFFFFF"
+        android:text="Confirm"
+        android:textColor="#0B0B0B"
+        android:textColorLink="#FFFFFF"
+        app:rippleColor="#FFFFFF" />
 
     <TextView
         android:id="@+id/socialSparkTextView"
@@ -42,7 +43,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="45dp"
-        android:text="Reset" />
+        android:background="#FFFFFF"
+        android:text="Reset"
+        android:textColor="#000000"
+        android:textColorLink="#FFFFFF" />
 
     <ImageView
         android:id="@+id/imageView"
