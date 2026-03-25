@@ -12,30 +12,37 @@
     tools:context=".SocialSpark">
 
 
+    <TextView
+        android:id="@+id/socialSparkTextView"
+        android:layout_width="329dp"
+        android:layout_height="69dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginRight="30dp"
+        android:fontFamily="@font/akaya_kanadaka"
+        android:scaleX="1"
+        android:scaleY="1.4"
+        android:textSize="18dp"
+        android:text="Your social spark suggestion will appear here."
+        android:textColor="#FFFFFF" />
 
-     />
+    <EditText
+        android:id="@+id/socialSparkEditText"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginBottom="1dp"
+        android:hint="Enter time of day"
+        android:textColor="#FFFFFF" />
+
 
     <Button
         android:id="@+id/confirmButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="1dp"
-        android:layout_marginTop="45dp"
-        android:text="Confirm" />
-
-    <TextView
-        android:id="@+id/socialSparkTextView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="TextView" />
-
-    <EditText
-        android:id="@+id/socialSparkEditText"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="1dp"
-        android:hint="Enter time of day"
-        android:textColor="#FFFFFF" />
+        android:drawableTint="#FFFFFF"
+        android:text="Confirm"
+        android:textColorLink="#FFEBEE" />
 
     <Button
         android:id="@+id/resetButton"
@@ -43,6 +50,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="45dp"
         android:text="Reset" />
+
 
     <ImageView
         android:id="@+id/imageView"
