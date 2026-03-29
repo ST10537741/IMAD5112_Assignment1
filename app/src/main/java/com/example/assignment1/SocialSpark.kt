@@ -22,7 +22,7 @@ class SocialSpark : AppCompatActivity() {
 
         confirmButton.setOnClickListener {
 
-            Log.d(TAG, "confirm button is pressed")
+            Log.d(TAG, "confirm that the confirm button has been pressed")
 
 
             val timeOfDay = socialSparkEditText.text.toString()  // declaring val timeOfDay to EditText
@@ -33,9 +33,10 @@ class SocialSpark : AppCompatActivity() {
                 "Afternoon Snack-Time" -> socialSparkTextView.text = ("Send a quick 'thinking of you' message.")
                 "Dinner" -> socialSparkTextView.text = ("Call a friend or relative for a quick 5-minute catch-up.")
                 "After Dinner" -> socialSparkTextView.text = ("Leave a thoughtful comment on a friend's post.")
-                else -> socialSparkTextView.text = ("Please enter a valid time of day. " + " ie. 'Dinner' or Afternoon.'")  // if the user does not input a valid time of day this message will be displayed
+                else -> socialSparkTextView.text = ("Please enter a valid time of day. " + " ie. 'Dinner' or Afternoon.' " +
+                        "Capitalise first letter of each word.")  // if the user does not input a valid time of day this message will be displayed
             }
-            Log.i(TAG, "the appropriate message is printed")
+            Log.i(TAG, "the appropriate message is printed in the TextView")
         }
         resetButton.setOnClickListener {
             // make resetButton erase all results
@@ -44,7 +45,7 @@ class SocialSpark : AppCompatActivity() {
 
 
             socialSparkEditText.text.clear()
-            socialSparkTextView.text = ""
+            socialSparkTextView.text = "Your social spark suggestion will appear here."
 
             Log.i(TAG, "confirm that all fields have been erased")
 
