@@ -10,11 +10,21 @@ If the user incorrectly iputs the time of day, a helpful error message will be d
 <img width="360" height="768" alt="Screenshot (10)" src="https://github.com/user-attachments/assets/ef205aa2-6017-4a8f-bb3e-440c7b871560" />
 
 
+
+
+
+
 <img width="358" height="798" alt="Screenshot (11)" src="https://github.com/user-attachments/assets/09d4d413-874d-4008-81f6-023c301985a8" />
 
 
 
+
+
+
 <img width="352" height="780" alt="Screenshot (12)" src="https://github.com/user-attachments/assets/0117cdcf-171a-462b-9fe9-5107bf033e40" />
+
+
+
 
 
 
