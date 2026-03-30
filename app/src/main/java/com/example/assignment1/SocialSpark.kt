@@ -46,9 +46,15 @@ class SocialSpark : AppCompatActivity() {
             }
             Log.i(TAG, "the appropriate message is printed in the TextView")
 
+            // Show full-screen animation
+
             lottieFullScreen.visibility = View.VISIBLE
 
+            // Allows the animation to play
+
             lottieFullScreen.playAnimation()
+
+            // Hides the animation after it's finished playing
 
             lottieFullScreen.postDelayed({
                 lottieFullScreen.visibility = View.GONE
