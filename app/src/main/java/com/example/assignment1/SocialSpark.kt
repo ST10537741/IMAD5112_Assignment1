@@ -7,7 +7,12 @@ import androidx.appcompat.app.AppCompatActivity
 import android.widget.TextView
 import android.widget.EditText
 import android.content.ContentValues.TAG
+import com.airbnb.lottie.LottieAnimationView
+import android.view.View
+
 class SocialSpark : AppCompatActivity() {
+
+    lateinit var lottieFullScreen: LottieAnimationView // Full screen animation
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -17,6 +22,8 @@ class SocialSpark : AppCompatActivity() {
         val confirmButton = findViewById<Button>(R.id.confirmButton)
         val resetButton = findViewById<Button>(R.id.resetButton)
         val socialSparkTextView = findViewById<TextView>(R.id.socialSparkTextView)
+        lottieFullScreen = findViewById(R.id.lottieFullScreen)
+
 
         // create button press event for when statement
 
@@ -35,8 +42,19 @@ class SocialSpark : AppCompatActivity() {
                 "After Dinner" -> socialSparkTextView.text = ("Leave a thoughtful comment on a friend's post.")
                 else -> socialSparkTextView.text = ("Please enter a valid time of day. " + " ie. 'Dinner' or Afternoon.' " +
                         "Capitalise first letter of each word.")  // if the user does not input a valid time of day this message will be displayed
+
             }
             Log.i(TAG, "the appropriate message is printed in the TextView")
+
+            lottieFullScreen.visibility = View.VISIBLE
+
+            lottieFullScreen.playAnimation()
+
+            lottieFullScreen.postDelayed({
+                lottieFullScreen.visibility = View.GONE
+            }, 2000)
+
+
         }
         resetButton.setOnClickListener {
             // make resetButton erase all results
