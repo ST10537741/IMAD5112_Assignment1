@@ -42,3 +42,5 @@ With the use of automated build tests of each version of the app, the app has be
 In the event of errors having occured, Github Actions allowed the app to be reverted to a state prior to an error ocurring, this made troubleshooting and debugging much easier and more efficient. 
 Pushing app files to Github also made for a more secure and safe means of storing information and data. 
 It also allowed for the app to be worked on from multiple devices, by use of the Github Desktop application. 
+
+Link to YouTube video of how the app works:  https://youtube.com/shorts/Wli-gmWg9XU?feature=share
